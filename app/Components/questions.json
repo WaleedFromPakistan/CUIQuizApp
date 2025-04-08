@@ -1,0 +1,290 @@
+[
+    {
+        "id": 1,
+        "subject": "pak_study",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What is the capital of Pakistan?",
+                "options": [
+                    "Karachi",
+                    "Quetta",
+                    "Lahore",
+                    "Islamabad"
+                ],
+                "correct": "Islamabad"
+            },
+            {
+                "id": 2,
+                "question": "Who was the founder of Pakistan?",
+                "options": [
+                    "Allama Iqbal",
+                    "Liaquat Ali Khan",
+                    "Quaid-e-Azam Muhammad Ali Jinnah",
+                    "Sir Syed Ahmed Khan"
+                ],
+                "correct": "Quaid-e-Azam Muhammad Ali Jinnah"
+            },
+            {
+                "id": 3,
+                "question": "When did Pakistan become an independent country?",
+                "options": [
+                    "14th August 1947",
+                    "15th August 1948",
+                    "23rd March 1940",
+                    "26th January 1950"
+                ],
+                "correct": "14th August 1947"
+            },
+            {
+                "id": 4,
+                "question": "What is the national language of Pakistan?",
+                "options": [
+                    "Punjabi",
+                    "Urdu",
+                    "Sindhi",
+                    "English"
+                ],
+                "correct": "Urdu"
+            },
+            {
+                "id": 5,
+                "question": "Which is the highest civil award in Pakistan?",
+                "options": [
+                    "Nishan-e-Imtiaz",
+                    "Sitara-e-Imtiaz",
+                    "Tamgha-e-Imtiaz",
+                    "Hilal-e-Imtiaz"
+                ],
+                "correct": "Nishan-e-Imtiaz"
+            },
+            {
+                "id": 6,
+                "question": "What is the name of the national poet of Pakistan?",
+                "options": [
+                    "Faiz Ahmed Faiz",
+                    "Ahmed Faraz",
+                    "Allama Iqbal",
+                    "Josh Malihabadi"
+                ],
+                "correct": "Allama Iqbal"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "subject": "maths",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What is the value of 5 + 7?",
+                "options": [
+                    "10",
+                    "12",
+                    "13",
+                    "14"
+                ],
+                "correct": "12"
+            },
+            {
+                "id": 2,
+                "question": "What is the square root of 49?",
+                "options": [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                ],
+                "correct": "7"
+            },
+            {
+                "id": 3,
+                "question": "What is 15 divided by 3?",
+                "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ],
+                "correct": "5"
+            },
+            {
+                "id": 4,
+                "question": "What is the result of 3 × 4?",
+                "options": [
+                    "7",
+                    "10",
+                    "12",
+                    "14"
+                ],
+                "correct": "12"
+            },
+            {
+                "id": 5,
+                "question": "What is the next number in the sequence: 2, 4, 6, ?",
+                "options": [
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "correct": "8"
+            },
+            {
+                "id": 6,
+                "question": "What is 100 minus 45?",
+                "options": [
+                    "55",
+                    "50",
+                    "45",
+                    "60"
+                ],
+                "correct": "55"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "subject": "physics",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What is the unit of force?",
+                "options": [
+                    "Watt",
+                    "Newton",
+                    "Pascal",
+                    "Joule"
+                ],
+                "correct": "Newton"
+            },
+            {
+                "id": 2,
+                "question": "What is the speed of light in vacuum?",
+                "options": [
+                    "3 × 10^8 m/s",
+                    "3 × 10^6 m/s",
+                    "3 × 10^4 m/s",
+                    "3 × 10^2 m/s"
+                ],
+                "correct": "3 × 10^8 m/s"
+            },
+            {
+                "id": 3,
+                "question": "Which instrument is used to measure temperature?",
+                "options": [
+                    "Barometer",
+                    "Thermometer",
+                    "Voltmeter",
+                    "Ammeter"
+                ],
+                "correct": "Thermometer"
+            },
+            {
+                "id": 4,
+                "question": "What type of energy is stored in a stretched spring?",
+                "options": [
+                    "Kinetic Energy",
+                    "Thermal Energy",
+                    "Elastic Potential Energy",
+                    "Chemical Energy"
+                ],
+                "correct": "Elastic Potential Energy"
+            },
+            {
+                "id": 5,
+                "question": "Which law states that for every action there is an equal and opposite reaction?",
+                "options": [
+                    "Newton's First Law",
+                    "Newton's Second Law",
+                    "Newton's Third Law",
+                    "Law of Gravity"
+                ],
+                "correct": "Newton's Third Law"
+            },
+            {
+                "id": 6,
+                "question": "What is the unit of electric current?",
+                "options": [
+                    "Volt",
+                    "Ampere",
+                    "Ohm",
+                    "Watt"
+                ],
+                "correct": "Ampere"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "subject": "chemistry",
+        "questions": [
+            {
+                "id": 1,
+                "question": "What is the chemical symbol for water?",
+                "options": [
+                    "O2",
+                    "H2O",
+                    "CO2",
+                    "NaCl"
+                ],
+                "correct": "H2O"
+            },
+            {
+                "id": 2,
+                "question": "Which gas is used by plants for photosynthesis?",
+                "options": [
+                    "Oxygen",
+                    "Carbon Dioxide",
+                    "Hydrogen",
+                    "Nitrogen"
+                ],
+                "correct": "Carbon Dioxide"
+            },
+            {
+                "id": 3,
+                "question": "What is the pH value of pure water?",
+                "options": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                ],
+                "correct": "7"
+            },
+            {
+                "id": 4,
+                "question": "Which element has the chemical symbol 'Na'?",
+                "options": [
+                    "Nitrogen",
+                    "Neon",
+                    "Sodium",
+                    "Nickel"
+                ],
+                "correct": "Sodium"
+            },
+            {
+                "id": 5,
+                "question": "What is the atomic number of Hydrogen?",
+                "options": [
+                    "0",
+                    "1",
+                    "2",
+                    "3"
+                ],
+                "correct": "1"
+            },
+            {
+                "id": 6,
+                "question": "Which acid is found in lemon?",
+                "options": [
+                    "Hydrochloric acid",
+                    "Acetic acid",
+                    "Citric acid",
+                    "Sulfuric acid"
+                ],
+                "correct": "Citric acid"
+            }
+        ]
+    }
+]
