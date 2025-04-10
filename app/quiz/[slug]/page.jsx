@@ -11,6 +11,10 @@ const Page = () => {
   const [score, setScore] = useState(0);
   const [buttonStatus, setStatus] = useState("Next");
   const [resultBox , setResultBox] = useState(false)
+  const [isactive, setActive] = useState(false);
+  const [selectedIndex , setIndex]= useState(null)
+  const [clickCount, setClick] = useState(0)
+
 
   useEffect(() => {
     if (params?.slug) {
@@ -22,25 +26,43 @@ const Page = () => {
     }
   }, [params]);
 
+  
   const handleClick = () => {
-      if (count < currQuestion.length - 1) {
-        setCount(count + 1);
-      }
-      else if(count+1 > currQuestion.length)
-      {
-        setStatus('Submit')
-       
-      }
+    // If on the second-last question, next click should show the last one AND update button text
+    if (count === currQuestion.length - 2) {
+      setCount(count + 1);
+      setIndex(null);
+      setStatus("Submit");
+    }
+    // If on the last question and user clicks Submit
+    else if (count === currQuestion.length - 1 && buttonStatus === "Submit") {
+      setResultBox(true);
+    }
+    // Otherwise just move to next question
+    else if (count < currQuestion.length - 2) {
+      setCount(count + 1);
+      setIndex(null);
+    }
   };
-
   const check = (opt) => {
     // Placeholder for answer checking
+    
     if(opt === currQuestion[count].correct)
       {
         setScore((prev)=>prev +1);
+        return true
       }
   };
+  const handleOptionClick = (opt , index)=>{
+    
+    setIndex(index)
+    setActive(true);
+    check(opt)
+    
 
+
+
+  }
   if (!currSubject || currQuestion.length === 0) {
     return (
       <div className='h-[560px] w-full bg-yellow-50 flex justify-center items-center'>
@@ -64,10 +86,8 @@ const Page = () => {
           {currQuestion[count].options.map((opt, index) => (
             <div
               key={index}
-              className="h-[100px] w-[400px] bg-gray-200 m-auto rounded-xl font-extrabold cursor-pointer text-center text-2xl"
-              onClick={() => {
-                check(opt);
-              }}
+              className={`h-[100px] w-[400px] ${selectedIndex === index ? opt === currQuestion[count].correct?'bg-green-700 text-white':'  bg-red-600 text-white':'bg-gray-200 text-black'} m-auto rounded-xl font-extrabold cursor-pointer text-center text-2xl`}
+              onClick={()=>handleOptionClick(opt , index)}
             >
               <h3 className='my-6'>{opt}</h3>
             </div>
@@ -82,7 +102,14 @@ const Page = () => {
       </div>
        :
     
-       <div>Hi</div>  
+       <div className='h-[480px] w-[full] bg-gray-600 m-5 text-center flex flex-col justify-center items-center text-white font-extrabold text-3xl'>
+        <h2 className='text-5xl'>Score</h2>
+        <div className='text-7xl'>{score}</div>
+        <div className='h-[50px]'></div>
+        {score>(currQuestion.length/2)?<h2 className='text-green-600 font-extrabold text-3xl'>PASSED</h2>:<h2 className='text-red-600 font-extrabold text-3xl'>FAILED</h2>}
+        
+       </div>
+
        
        }
     </div>   
